@@ -54,7 +54,6 @@ const SkillsPage = () => {
           textShadow: '2px 2px 4px rgba(0, 0, 0, 0.6)',
           margin: 0
         }}>
-          Here's<br />
           <span style={{ fontSize: '3rem' }}>My Skills</span>
         </h1>
       </div>
