@@ -1,5 +1,7 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
+
 
 const experienceImages = {
   practicum: '/fisdas.webp',
@@ -57,10 +59,12 @@ const ExperiencePage = () => {
             key={exp.id}
             className="flex items-center bg-gradient-to-r from-gray-800 via-gray-600 to-gray-400 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-xl"
           >
-            <img
+            <Image
               src={exp.image}
               alt={exp.title}
-              className="w-48 h-32 object-cover"
+              width={150}
+              height={128}
+              className="object-cover"
             />
             <div className="p-6 text-white">
               <h2 className="text-xl font-semibold">{exp.title}</h2>

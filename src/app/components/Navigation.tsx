@@ -9,7 +9,6 @@ const NavLinks = [
     { name: 'Home', link: '/', icon: FaHome },
     { name: 'Skills', link: '/skills', icon: FaTools },
     { name: 'Experience', link: '/experience', icon: FaChartLine },
-    { name: 'Projects', link: '/projects', icon: FaTasks },
     { name: 'Contact', link: '/contact', icon: FaPhone },
 ];
 
@@ -33,7 +32,7 @@ const Navigation = () => {
 
             return () => clearTimeout(timeout);
         }
-    }, [isRouting]);
+    }, [isRouting, path]);
 
     const isHomePage = path === '/';
 
